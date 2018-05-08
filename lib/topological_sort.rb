@@ -22,7 +22,6 @@ def topological_sort(vertices)
     #do this until the queue is empty
     until queue.empty?
       curr_node = queue.shift
-      p curr_node.value
 
       sorted << curr_node
       to_vertices = []
@@ -57,6 +56,8 @@ def topological_sort(vertices)
     else
       return []
     end
+
+    
     # easy_read = []
     # sorted.each do |vertex|
     #   easy_read << vertex.value
